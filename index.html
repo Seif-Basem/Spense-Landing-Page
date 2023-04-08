@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spense Landing Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/myframework.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- start message -->
+  <div class="message">🎉To celebrate Spense's launch. we will be waiving all fees for the entire month of April. <span>You Will be receiving 100% of the earnings.</span> 🎉</div>
+  <!-- end message -->
+  <!-- start header -->
+  <header>
+    <div class="container f-between">
+      <div class="logo">spense.</div>
+      <img src="Assets/Hamburger Menu.svg" class="open" id="open" alt="">
+      <div class="content f-between">
+        <ul class="nav f-center gap-2">
+          <li><a href="#">Business</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Features</a></li>
+        </ul>
+        <div class="btns f-center gap-1">
+          <a href="#" class="log">Login</a>
+          <a href="#" class="start">Get Started</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- end header -->
+  <!-- start landing -->
+  <div class="landing">
+    <div class="container f-between">
+      <div class="overlay"></div>
+      <div class="content">
+        <h1>Share your unfiltered<br> thoughts. Get paid.</h1>
+        <p>Spense is an open platform for individuals to share their unfiltered thoughts. Discuss the topics you love, and get paid for doing <i>just</i> that.</p>
+        <ul class="list">
+          <li><img src="Assets/Checkmark.svg" alt=""> Receive 99% off the earnings.</li>
+          <li><img src="Assets/Checkmark.svg" alt=""> Get paid via Debit Card, ACH, or PayPal.</li>
+          <li><img src="Assets/Checkmark.svg" alt=""> Withdraw your earnings anytime.</li>
+        </ul>
+        <div class="btns">
+          <input type="text" placeholder="john@example.com">
+          <a href="#">Get Started</a>
+        </div>
+      </div>
+      <picture>
+        <source media="(max-width: 767px)" srcset="Assets/Hero-Image-(Mobile).png">
+        <source media="(max-width: 991px)" srcset="Assets/Hero-Image-(Tablet).png">
+        <img src="Assets/Hero Image (Desktop).png" alt="">
+      </picture>
+    </div>
+  </div>
+  <!-- end landing -->
+  <!-- start sponsers -->
+  <div class="sponsers">
+    <div class="container f-between">
+      <img src="Assets/Facebook Logo.png" alt="">
+      <img src="Assets/Dribbble Logo.png" alt="">
+      <img src="Assets/Youtube Logo.png" alt="">
+      <img class="pinterest" src="Assets/Pinterest Logo.png" alt="">
+      <img class="twitter" src="Assets/Twitter Logo.png" alt="">
+      <img class="reddit" src="Assets/Reddit Logo.png" alt="">
+      <img class="google" src="Assets/Google Logo.png" alt="">
+      <img class="slack" src="Assets/Slack Logo.png" alt="">
+    </div>
+  </div>
+  <!-- end sponsers -->
+  <!-- start secure -->
+  <div class="secure">
+    <div class="container">
+      <div class="content f-between">
+        <div class="text">
+          <h3>Secure your money with Escrow.</h3>
+          <p>Spense uses Escrow to secure all payments. We believe Esrow offers the highest level of security for your payments so you never need to worry about scams.</p>
+          <a href="#"><span>Learn more about Escrow</span> <sapn>➡</sapn></a>
+        </div>
+        <picture>
+          <source media="(max-width: 767px)" srcset="Assets/Phone-Mockup-(Mobile).png">
+          <source media="(max-width: 991px)" srcset="Assets/Phone-Mockup-(Tablet).png">
+          <img src="Assets/Phone Mockup (Desktop).png" alt="">
+        </picture>
+      </div>
+    </div>
+  </div>
+  <!-- end secure -->
+  <!-- start editor -->
+  <div class="editor">
+    <div class="container f-between">
+      <img src="Assets/Text Editor.png" alt="">
+      <div class="text">
+        <h3>A text editor like no other.</h3>
+        <p>Our text editor pulls you into focus mode with it's simplistic design and usability so you can put out your best writings.</p>
+        <a href="#"><span>Text Editor Live Demo</span> <sapn>➡</sapn></a>
+      </div>
+    </div>
+  </div>
+  <!-- end editor -->
+  <!-- start footer -->
+  <footer>
+    <div class="container">
+      <div class="box">
+        <h4>Spense.</h4>
+        <p>Spense is an open platform for individulas to<br> share their unfiltered thoughts. Discuss the<br> topics you love, and get paid for doing <i>just</i> that.</p>
+      </div>
+      <div class="box">
+        <h4>Sitemap</h4>
+        <ul>
+          <li>Homepage</li>
+        </ul>
+      </div>
+      <div class="box">
+        <h4>Resources</h4>
+        <ul>
+          <li>Support</li>
+          <li>Contact</li>
+          <li>FAQ</li>
+        </ul>
+      </div>
+      <div class="box">
+        <h4>Company</h4>
+        <ul>
+          <li>About</li>
+          <li>Customers</li>
+          <li>Blog</li>
+        </ul>
+      </div>
+      <div class="box">
+        <h4>Opportunities</h4>
+        <ul>
+          <li>Jobs</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <!-- end footer -->
+
+  <script>
+    let opeen = document.getElementById("open");
+    let nav = document.querySelector("header .content");
+    let overlay = document.querySelector(".overlay");
+
+    opeen.onclick = function () {
+      nav.classList.toggle("show");
+      overlay.classList.toggle("show");
+    }
+  </script>
+</body>
+</html>
